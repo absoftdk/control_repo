@@ -4,8 +4,8 @@ class profile::ssh_server {
     ensure => present,
   }
   
-  package { 'sshd': 
-    ensure => running,
+  service { 'sshd': 
+    ensure => 'running',
     enable => 'true',  
   }
   
