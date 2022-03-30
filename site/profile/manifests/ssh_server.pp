@@ -6,7 +6,7 @@ class profile::ssh_server {
   
   package { 'sshd': 
     ensure => 'running',
-    ensure => 'true',  
+    enable => 'true',  
   }
   
   ssh_authorized_key { 'root@master.puppet.vm':
