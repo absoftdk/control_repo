@@ -1,4 +1,7 @@
 node default {
+  file { '/root/README':
+    ensure  => absent,
+  }
 }
 
 node 'master.puppet.vm' {
